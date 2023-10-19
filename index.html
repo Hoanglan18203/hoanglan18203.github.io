@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            /* Optional CSS styles for menu appearance */
+            ul.menu {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              background-color: #83c388;
+            }
+        
+            ul.menu li {
+              display: inline-block;
+            }
+        
+            ul.menu li a {
+              display: block;
+              padding: 15px 100px;
+              text-decoration: none;
+              color: #000;
+            }
+        
+            ul.menu li a:hover {
+              background-color: #ddd;
+            }
+            /* Dinh dang hien thi cua luoi san pham */
+            .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* So cot trong luoi */
+            grid-gap: 20px; /* Khoang cach giua cac o san pham */
+            }
+
+            .product-item {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            }
+
+            .product-item img {
+            max-width: 100%;
+            height: auto;
+            }
+            .product-item .price {
+            font-weight: bold;
+            color: #ff0000;
+            margin-top: 10px;
+            }
+            .search-bar {
+            margin-bottom: 20px;
+            padding: 20px;
+            }
+            .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            }
+            body {
+            background-color: #daf4dc; /* Mau nen toan bo trang */
+            }
+          </style>
+        <title>A Little Bean - Homepage</title>
+    </head>
+
+    <body>
+        <div class="logo">
+            <a class="logoimga" title="A Little Bean" href="http://a-little-bean.local/"><img src="banner.png" height="100" width="500" alt="Banner"></a> 
+        </div>
+        <div class="header">
+            <div class="menu">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul> </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Enter keywords">
+                <button type="button" id="search-button">Search</button>
+            </div>
+        </div>
+        <h1> Welcome to A Little Bean!</h1> 
+        <h4>Your destination for exquisite home decor and thoughtful gifts </h4>
+            <div class="product-grid">
+                <div class="product-item">
+                  <img src="https://www.ikea.com/us/en/images/products/blidvaeder-table-lamp-off-white-ceramic-beige__1059592_pe849717_s5.jpg" alt="Lamp">
+                  <h3>Table Lamp</h3>
+                  <p>Off-white ceramic/beige</p>
+                  <span class="price">$24.99</span>
+                </div>
+            
+                <div class="product-item">
+                  <img src="https://www.ikea.com/us/en/images/products/brunkrissla-duvet-cover-and-pillowcase-s-black__0884656_pe634457_s5.jpg?f=s" alt="Duvet cover and pillowcase">
+                  <h3>Duvet Cover And Pillowcase Set</h3>
+                  <p>Cute</p>
+                  <span class="price">$19.99</span>
+                </div>
+            
+                <div class="product-item">
+                  <img src="https://www.ikea.com/us/en/images/products/faergklar-bowl-matte-green__0985869_pe816850_s5.jpg?f=s" alt="Bowl">
+                  <h3>Bowl</h3>
+                  <p>Matte green</p>
+                  <span class="price">$9.99</span>
+                </div>
+                <div class="product-item">
+                    <img src="https://www.ikea.com/us/en/images/products/gradvis-vase-blue__1160575_pe888973_s5.jpg?f=s" alt="Vase">
+                    <h3>Flower Vase</h3>
+                    <p>Blue</p>
+                    <span class="price">$8.75</span>
+                </div>
+                <!-- Them cac san pham khac tai day -->
+              </div>
+        <h2> See us on Youtube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ifMaXKBYvHc?si=KuXqQnqGADbt4d73" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h2> Our Address </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6535602836416!2d106.6657602745747!3d10.761160559476043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f8e41340341%3A0x70504f64310eaa80!2sUEH%20Smart%20Library%20-%20Campus%20B!5e0!3m2!1svi!2s!4v1697718169263!5m2!1svi!2s" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+
+        <footer>
+            <p>ALittleBean &copy; 2023</p>
+        </footer>
+    </body>
+</html>
